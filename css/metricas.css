@@ -1,0 +1,40 @@
+.metricas {
+    padding-bottom: 90px;
+    margin-top: 3em;
+}
+
+.metricas__lista {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.metricas__lista--item {
+    padding: 0 1em;
+}
+
+.metricas__lista--titulo {
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--vermelho-escuro);
+}
+
+.metricas__lista--titulo-secundario {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--preto);
+    padding: 1em 0;
+}
+
+.metricas__lista--texto {
+    color: var(--cinza-medio);
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+    .metricas__lista {
+        display: flex;
+        flex-direction: column;
+    }
+}

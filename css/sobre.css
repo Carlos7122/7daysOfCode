@@ -1,0 +1,27 @@
+.sobrenos {
+    text-align: center;
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobrenos__titulo {
+    font-weight: 600;
+    color: var(--vermelho-escuro);
+}
+
+.sobrenos__titulo-principal {
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--preto);
+    padding: 1em 0;
+}
+
+.sobrenos__texto {
+    font-size: 20px;
+    width: 60%;
+    
+    color: var(--cinza-medio);
+}

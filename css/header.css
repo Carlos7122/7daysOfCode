@@ -1,0 +1,128 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em 0em;
+    margin: 0 auto;
+}
+
+.cabecalho__link--logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cabecalho__logo--texto {
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 0.5em;
+    color: var(--cinza-escuro);
+}
+
+.menu__lista,
+.loginCadastro__lista {
+    display: flex;
+}
+
+.menu__lista--item {
+    padding: 0 2em;
+}
+
+.menu__lista--link {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cinza-medio);
+}
+
+.menu__lista--link:hover {
+    border-bottom: 2px solid var(--cinza-medio);
+}
+
+.loginCadastro__lista--item {
+    padding: 1em;
+}
+
+.loginCadastro__lista--link {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--cinza-medio);
+}
+
+.loginCadastro__lista--link:hover{
+    border-bottom: 2px solid var(--cinza-medio);
+}
+
+.loginCadastro__link-botao {
+    color: var(--branco);
+    background-color: var(--vermelho-escuro);
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid var(--cinza-claro);
+    transition: 0.5s;
+}
+
+.loginCadastro__link-botao:hover {
+    color: var(--vermelho-escuro);
+    background-color: var(--branco); 
+}
+
+.menu__hamburguer {
+    display: none;
+}
+
+.cabecalho__icone--login {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho__menu,
+    .menu__lista,
+    .menu__botao {
+        display: none;
+    }
+
+    .menu__hamburguer {
+        display: block;
+        padding: 5px;
+    }
+
+    .menu__hamburguer--img {
+        width: 20px;
+        height: 20px; 
+        background: url(../img/Menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .menu__botao:checked~.menu__lista {
+        display: block;
+    }
+
+    .menu__lista {
+        position: absolute;
+        background-color: var(--branco);
+        padding: 1em 0;
+        width: 50vw;
+    }
+
+    .menu__lista--item {
+        padding: 1em;
+    }
+} 
+
+@media screen and (max-width: 420px) {
+    .cabecalho__icone--login {
+        display: block;
+    }
+
+    .cabecalho__loginCadastro {
+        display: none;
+    }
+}
