@@ -1,2 +1,2 @@
 # 7daysOfCode
-Projeto desenvolvido em cima do desafio 7daysOfCode
+Projeto desenvolvido de acordo com o desafio 7daysOfCode promovido pela Alura.
